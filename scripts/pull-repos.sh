@@ -1,0 +1,1 @@
+for d in ../SearchEngine/*/ ; do (cd "$d" && git pull && echo "$d"); done
