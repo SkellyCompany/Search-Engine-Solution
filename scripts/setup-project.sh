@@ -2,6 +2,12 @@ cd ..
 mkdir SearchEngine
 cd SearchEngine
 
+### Pull LoadBalancer
+git clone git@github.com:Skelly-Co/Search-Engine-LoadBalancer.git LoadBalancer
+cd LoadBalancer
+git checkout development
+cd ..
+
 ### Pull API
 git clone git@github.com:Skelly-Co/Search-Engine-Crawler.git Crawler
 cd Crawler
