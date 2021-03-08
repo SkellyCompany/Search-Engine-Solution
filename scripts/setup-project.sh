@@ -34,3 +34,4 @@ cd ..
 dotnet sln add LoadBalancer/SearchEngine.LoadBalancer.csproj
 dotnet sln add Crawler/SearchEngine.Crawler.csproj
 dotnet sln add LoggerAPI/SearchEngine.LoggerAPI.csproj
+dotnet sln add API/SearchEngine.API.csproj
