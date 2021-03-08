@@ -7,7 +7,7 @@ osascript -e 'tell app "Terminal" to do script "cd ../SearchEngine/API/SearchEng
 sleep 1
 
 osascript -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down'
-osascript -e 'tell app "Terminal" to do script "cd ../SearchEngine/LoggerAPI && dotnet watch run --urls=http://localhost:5006/" in window 1'
+osascript -e 'tell app "Terminal" to do script "cd ../SearchEngine/LoggerAPI/LoggerAPI && dotnet watch run --urls=http://localhost:5006/" in window 1'
 sleep 1
 
 cd ../SearchEngine/LoadBalancer/LoadBalancer
