@@ -1,2 +1,3 @@
 # Subrepos
 SearchEngine/
+!SearchEngine/SearchEngine.sln

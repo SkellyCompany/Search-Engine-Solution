@@ -1,6 +1,4 @@
-cd ..
-mkdir SearchEngine
-cd SearchEngine
+cd ../SearchEngine
 
 ### Pull LoadBalancer
 git clone git@github.com:Skelly-Co/Search-Engine-LoadBalancer.git LoadBalancer
@@ -31,3 +29,8 @@ git clone git@github.com:Skelly-Co/Search-Engine-LoggerAPI.git LoggerAPI
 cd LoggerAPI
 git checkout development
 cd ..
+
+### Add Projects to Solution
+dotnet sln add LoadBalancer/SearchEngine.LoadBalancer.csproj
+dotnet sln add Crawler/SearchEngine.Crawler.csproj
+dotnet sln add LoggerAPI/SearchEngine.LoggerAPI.csproj
