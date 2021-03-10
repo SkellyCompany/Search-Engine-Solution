@@ -8,7 +8,6 @@ for (( i=0; i<=$hostsPoolSize-1; i++ ))
 do
 apiHost="$hostUrl:$hostNumber"
 
-echo "$apiHost"
 osascript -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down'
 osascript -e 'tell app "Terminal" to do script "cd ../SearchEngine/API && dotnet watch run --urls='"$apiHost"'" in window 1'
 
