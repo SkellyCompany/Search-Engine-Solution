@@ -19,5 +19,9 @@ osascript -e 'tell application "System Events" to tell process "Terminal" to key
 osascript -e 'tell app "Terminal" to do script "cd ../SearchEngine/LoggerAPI && dotnet watch run --urls=http://localhost:5002/" in window 1'
 sleep 0.5
 
-cd ../SearchEngine/LoadBalancer
-dotnet watch run --urls=http://localhost:5000/
+osascript -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down'
+osascript -e 'tell app "Terminal" to do script "cd ../SearchEngine/LoadBalancer && dotnet watch run --urls=http://localhost:5000/" in window 1'
+sleep 0.5
+
+cd ../SearchEngine/Web
+npm run dev
